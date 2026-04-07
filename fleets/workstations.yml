@@ -120,7 +120,7 @@ controls:
   scripts:
     - paths: ../platforms/windows/scripts/*.ps1
     - paths: ../platforms/linux/scripts/*.sh
-    - path: ../platforms/macos/scripts/set-dns-cloudflare.sh
+    - paths: ../platforms/macos/scripts/*.sh
 
 ###########################################################
 # Reports
@@ -154,7 +154,7 @@ reports:
 policies:
   - paths: ../platforms/windows/policies/*.yml
   - paths: ../platforms/linux/policies/*.yml
-  - path: ../platforms/macos/policies/dns-resolvers.policies.yml
+  - paths: ../platforms/macos/policies/*.yml
 
 ###########################################################
 # Software available for install
@@ -183,13 +183,20 @@ software:
     #     - Communication
     #   labels_include_any:
     #     - "x86-based Windows hosts"
+      - slug: claude/windows
+        self_service: true
 
   packages: # Custom packages (if any)
     # macOS custom packages
-    # …
+    - path: ../platforms/macos/software/zoom.yml
+      self_service: true
+      setup_experience: true
+      categories:
+        - Communication
 
     # Windows custom packages
-    # …
+    - path: ../platforms/windows/software/cloudflare-warp.yml
+      self_service: false
 
     # Linux custom packages
     # …
