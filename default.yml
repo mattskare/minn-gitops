@@ -21,7 +21,7 @@ org_settings:
     # Read more:
     #   • https://fleetdm.com/docs/configuration/yaml-files#org-info
     ###########################################################
-    org_name: MinnGitOps
+    org_name: Mini-GitOps
 
   server_settings:
     ###########################################################
@@ -32,6 +32,18 @@ org_settings:
     # configurations.
     ###########################################################
     server_url: $FLEET_URL
+
+  fleet_desktop:
+    transparency_url: https://catoftheday.com
+
+  host_expiry_settings:
+    host_expiry_enabled: true
+    host_expiry_window: 30
+
+  webhook_settings:
+    activities_webhook:
+      enable_activities_webhook: true
+      destination_url: https://webhook.site/383eb375-e38f-4503-a515-f0ace7f90cc3
 
   ###########################################################
   # Uncomment to use single sign-on (SSO) for admins accessing Fleet.
