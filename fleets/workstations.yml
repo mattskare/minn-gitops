@@ -193,3 +193,10 @@ software:
 
   app_store_apps: # Apps to install via VPP from the macOS App Store, if any
     # …
+
+
+labels:
+  - name: C-Suite
+    description: Hosts belonging to members of the C-suite.
+    label_membership_type: manual
+    hosts:
