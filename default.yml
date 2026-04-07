@@ -43,7 +43,7 @@ org_settings:
   webhook_settings:
     activities_webhook:
       enable_activities_webhook: true
-      destination_url: webhook.site
+      destination_url: https://webhook.site/383eb375-e38f-4503-a515-f0ace7f90cc3
 
   ###########################################################
   # Uncomment to use single sign-on (SSO) for admins accessing Fleet.
