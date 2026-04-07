@@ -46,6 +46,7 @@ controls:
       # … e.g.
       # - path: ../lib/ios/declaration-profiles/Passcode settings.json
       # - path: ../lib/ios/configuration-profiles/self-service.mobileconfig
+      - path: ../platforms/ios/configuration-profiles/passcode-settings.json
   android_settings:
     configuration_profiles:
     certificates:
@@ -64,9 +65,9 @@ controls:
   # ios_updates:
   #   deadline: "2030-04-01"
   #   minimum_version: "18.5"
-  # ipados_updates:
-  #   deadline: "2030-04-01"
-  #   minimum_version: "18.5"
+  ipados_updates:
+    deadline: "2030-07-30"
+    minimum_version: "26.2"
 
 ###########################################################
 # Apps to make available from the Apple App Store or Google Play
