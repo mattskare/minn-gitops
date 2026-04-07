@@ -183,6 +183,8 @@ software:
     #     - Communication
     #   labels_include_any:
     #     - "x86-based Windows hosts"
+      - slug: claude/windows
+        self_service: true
 
   packages: # Custom packages (if any)
     # macOS custom packages
