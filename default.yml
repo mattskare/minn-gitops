@@ -40,6 +40,11 @@ org_settings:
     host_expiry_enabled: true
     host_expiry_window: 30
 
+  webhook_settings:
+    activites_webhook:
+      enable_activities_webhook: true
+      destination_url: webhook.site
+
   ###########################################################
   # Uncomment to use single sign-on (SSO) for admins accessing Fleet.
   #
