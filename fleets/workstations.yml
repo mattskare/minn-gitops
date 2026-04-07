@@ -118,9 +118,9 @@ controls:
   # > using `paths` below.
   ###########################################################
   scripts:
-    - paths: ../platforms/macos/scripts/*.sh
     - paths: ../platforms/windows/scripts/*.ps1
     - paths: ../platforms/linux/scripts/*.sh
+    - path: ../platforms/macos/scripts/set-dns-cloudflare.sh
 
 ###########################################################
 # Reports
@@ -152,9 +152,9 @@ reports:
 # > using `paths` below.
 ###########################################################
 policies:
-  - paths: ../platforms/macos/policies/*.yml
   - paths: ../platforms/windows/policies/*.yml
   - paths: ../platforms/linux/policies/*.yml
+  - path: ../platforms/macos/policies/dns-resolvers.policies.yml
 
 ###########################################################
 # Software available for install
@@ -203,3 +203,10 @@ labels:
     description: Hosts belonging to members of the C-suite.
     label_membership_type: manual
     hosts:
+
+settings:
+  webhook_settings:
+    failing_policies_webhook:
+      enable_failing_policies_webhook: true
+      destination_url: https://webhook.site/383eb375-e38f-4503-a515-f0ace7f90cc3
+      host_batch_size: 0
