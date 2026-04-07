@@ -120,7 +120,7 @@ controls:
   scripts:
     - paths: ../platforms/windows/scripts/*.ps1
     - paths: ../platforms/linux/scripts/*.sh
-    - path: ../platforms/macos/scripts/*.sh
+    - paths: ../platforms/macos/scripts/*.sh
 
 ###########################################################
 # Reports
@@ -154,7 +154,7 @@ reports:
 policies:
   - paths: ../platforms/windows/policies/*.yml
   - paths: ../platforms/linux/policies/*.yml
-  - path: ../platforms/macos/policies/*.yml
+  - paths: ../platforms/macos/policies/*.yml
 
 ###########################################################
 # Software available for install
